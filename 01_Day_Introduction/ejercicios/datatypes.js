@@ -1,0 +1,6 @@
+console.log(typeof nombre)
+console.log(typeof estaCasado)
+console.log(typeof jubilacion)
+console.log(typeof sueldo)
+console.log('I am',myAge,'years old') 
+console.log('You are',yourAge,'years old') 
