@@ -77,3 +77,27 @@ for(const user in users){
     }
 }
 console.log(`usuarios con puntaje mayor o igual a 50: ${count}`)
+
+const MERN = ['MongoDB', 'Express', 'React', 'Node']
+for(const user in users){
+  count = 0
+  MERN.forEach(element => {
+    skills = users[user].skills
+    if (skills.includes(element))
+      count++
+  })
+  if (count==4) {
+    console.log(user)    
+  }
+}
+
+users_ = Object.assign(users, {Francisco: {email: "ffloresm@udec.cl", skills: ['Python', 'C', 'Java', 'JavaScript'], age: 28, isLoggedIn: true, points: 50}});
+console.log(users_)
+
+for(const user in users_){
+  console.log(Object.keys(users_[user]))
+}
+
+for(const user in users_){
+  console.log(Object.values(users_[user]))
+}
